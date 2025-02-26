@@ -1,0 +1,51 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.social-link {
+    transition: all 0.3s ease-in-out;
+}
+
+.social-link:hover {
+    background-color: #F26B3A;
+    color: white;
+}
+
+.accent-border {
+    border-top: 4px solid #F26B3A;
+}
+
+.btn-mattinAI {
+    background-color: #F26B3A;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-mattinAI:hover {
+    background-color: #e05a2a;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+}
+
+.logo-animation {
+    animation: pulse 3s infinite ease-in-out;
+}
+
+.dot-animation {
+    animation: pulse 2s infinite ease-in-out;
+}
+
+/* Apply subtle animation to the logo image */
+img[src$="logo.svg"] {
+    animation: pulse 3s infinite ease-in-out;
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+img[src$="logo.svg"]:hover {
+    transform: scale(1.05);
+} 
